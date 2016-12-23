@@ -18,4 +18,3 @@ function bubble(arr) {
 
 console.log(`Unsorted: ${unsortedArr}`);
 console.log(`Sorted: ${bubble(unsortedArr)}`);
-
