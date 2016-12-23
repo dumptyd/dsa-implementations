@@ -33,11 +33,13 @@ vector<int> merge(vector<int> arr1, vector<int> arr2)
   vector<int> arr;
   while(arr1.size() && arr2.size())
   {
-    if(arr1[0] > arr2[0]){
+    if(arr1[0] > arr2[0])
+    {
       arr.push_back(arr2[0]);
       arr2.erase(arr2.begin());
     }
-    else {
+    else 
+    {
       arr.push_back(arr1[0]);
       arr1.erase(arr1.begin());
     }
