@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;
 
-int binary_search(int &elem_to_find, vector<int> arr) {
+int binary_search(int &elem_to_find, vector<int> arr) 
+{
   auto start = 0;
   auto end = arr.size()-1;
   auto mid = 0;
@@ -28,7 +29,7 @@ int main()
   for(auto i = 0; i < v.size(); ++i) 
   {
     auto index = binary_search(v[i], v);
-    cout<< "binarySearch(" << v[i] << ", v): " << index << endl;
+    cout<< "binary_search(" << v[i] << ", v): " << index << endl;
     cout<< "v[" << i << "]: " << v[index] << "\n--------------" << endl;
   }
   return 0;
